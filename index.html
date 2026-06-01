@@ -1,54 +1,89 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Post-Mortem Técnico - Rafa Fuentes</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<div class="container">
-    <h1>Cómo resolvimos un bug crítico en producción y qué aprendimos</h1>
+    <div class="container">
+        <h1>Cómo resolvimos un bug crítico en producción y qué aprendimos</h1>
 
-    <p class="subtitle">
-        Un análisis post-mortem constructivo sobre un incidente en una plataforma e-commerce.
-    </p>
+        <p class="subtitle">
+            Un análisis post-mortem constructivo sobre un incidente en una plataforma e-commerce.
+        </p>
+        <p>
+            <strong>Autor:</strong> Rafa Fuentes<br>
+            <strong>Fecha:</strong> Mayo 2026
+        </p>
 
-    <h2>Contexto</h2>
-    <p>
-        Durante el despliegue de una nueva funcionalidad de cupones de bienvenida,
-        el equipo detectó un comportamiento inesperado que afectó el proceso de compra.
-    </p>
+        <h2>Contexto</h2>
+        <p>
+            Durante el despliegue de una nueva funcionalidad de cupones de bienvenida,
+            el equipo detectó un comportamiento inesperado que afectó el proceso de compra.
+        </p>
 
-    <h2>Problema</h2>
-    <p>
-        Algunos usuarios obtenían descuentos del 100% debido a una validación
-        incorrecta cuando el campo user_id llegaba con valor nulo.
-    </p>
+        <h2>Problema</h2>
+        <p>
+            Algunos usuarios obtenían descuentos del 100% debido a una validación
+            incorrecta cuando el campo user_id llegaba con valor nulo.
+        </p>
 
-    <h2>Acciones Tomadas</h2>
-    <ul>
-        <li>Detección temprana mediante reportes.</li>
-        <li>Rollback inmediato a una versión estable.</li>
-        <li>Investigación de la causa raíz.</li>
-        <li>Actualización de tests automatizados.</li>
-    </ul>
+        <h2>Acciones Tomadas</h2>
+        <ul>
+            <li>Detección temprana mediante reportes de usuarios.</li>
+            <li>Análisis inicial de logs y métricas del sistema.</li>
+            <li>Rollback inmediato a una versión estable para detener el impacto.</li>
+            <li>Investigación de la causa raíz mediante un proceso de post-mortem.</li>
+            <li>Corrección de la validación del campo user_id.</li>
+            <li>Actualización de pruebas automatizadas para cubrir escenarios nulos.</li>
+        </ul>
 
-    <h2>Aprendizajes</h2>
-    <ul>
-        <li>Validar siempre casos extremos.</li>
-        <li>Mejorar la cobertura de pruebas.</li>
-        <li>Mantener post-mortems sin búsqueda de culpables.</li>
-        <li>Documentar procesos para futuras referencias.</li>
-    </ul>
+        <h2>Aprendizajes</h2>
+        <ul>
+            <li>Validar siempre casos extremos.</li>
+            <li>Mejorar la cobertura de pruebas.</li>
+            <li>Mantener post-mortems sin búsqueda de culpables.</li>
+            <li>Documentar procesos para futuras referencias.</li>
+        </ul>
 
-    <h2>Feedback Radicalmente Sincero</h2>
-    <p>
-        El equipo enfocó la conversación en mejorar procesos y no en señalar personas,
-        promoviendo una cultura de aprendizaje continuo.
-    </p>
-</div>
+        <h2>Evidencia de Control de Versiones</h2>
+
+        <p>
+            Todo el trabajo fue gestionado mediante Git y GitHub, utilizando commits
+            incrementales para mantener la trazabilidad de los cambios.
+        </p>
+
+        <p>
+            Repositorio:
+            <a href="https://github.com/rafafuentesz/rafa-tech-blog" target="_blank">
+                Ver repositorio en GitHub
+            </a>
+        </p>
+
+        <h2>Feedback Radicalmente Sincero</h2>
+
+        <p>
+            Durante el análisis posterior al incidente, el equipo evitó buscar culpables y
+            centró la discusión en comprender qué falló en el proceso.
+        </p>
+
+        <p>
+            El feedback fue directo, específico y respetuoso. Esto permitió identificar
+            oportunidades de mejora en validaciones, pruebas y revisiones de código sin
+            generar conflictos personales.
+        </p>
+
+        <p>
+            Esta experiencia reforzó la importancia de construir una cultura donde los
+            errores sean oportunidades de aprendizaje y mejora continua.
+        </p>
+    </div>
 
 </body>
+
 </html>
