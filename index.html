@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post-Mortem Técnico - Rafa Fuentes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Cómo resolvimos un bug crítico en producción y qué aprendimos</h1>
+
+    <p class="subtitle">
+        Un análisis post-mortem constructivo sobre un incidente en una plataforma e-commerce.
+    </p>
+
+    <h2>Contexto</h2>
+    <p>
+        Durante el despliegue de una nueva funcionalidad de cupones de bienvenida,
+        el equipo detectó un comportamiento inesperado que afectó el proceso de compra.
+    </p>
+
+    <h2>Problema</h2>
+    <p>
+        Algunos usuarios obtenían descuentos del 100% debido a una validación
+        incorrecta cuando el campo user_id llegaba con valor nulo.
+    </p>
+
+    <h2>Acciones Tomadas</h2>
+    <ul>
+        <li>Detección temprana mediante reportes.</li>
+        <li>Rollback inmediato a una versión estable.</li>
+        <li>Investigación de la causa raíz.</li>
+        <li>Actualización de tests automatizados.</li>
+    </ul>
+
+    <h2>Aprendizajes</h2>
+    <ul>
+        <li>Validar siempre casos extremos.</li>
+        <li>Mejorar la cobertura de pruebas.</li>
+        <li>Mantener post-mortems sin búsqueda de culpables.</li>
+        <li>Documentar procesos para futuras referencias.</li>
+    </ul>
+
+    <h2>Feedback Radicalmente Sincero</h2>
+    <p>
+        El equipo enfocó la conversación en mejorar procesos y no en señalar personas,
+        promoviendo una cultura de aprendizaje continuo.
+    </p>
+</div>
+
+</body>
+</html>

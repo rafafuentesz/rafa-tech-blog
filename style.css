@@ -1,0 +1,26 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f8f9fa;
+    color: #333;
+    margin: 0;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 40px;
+    background: white;
+}
+
+h1 {
+    color: #24292e;
+}
+
+h2 {
+    margin-top: 30px;
+}
+
+.subtitle {
+    color: #666;
+    font-style: italic;
+}
